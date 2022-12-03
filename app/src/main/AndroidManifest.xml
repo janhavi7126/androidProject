@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android.mymall">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyMall"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Activities.MainActivity3"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dac.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ViewAllBtnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Dac.MyAdressesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddAddressActivity"
+            android:exported="false"
+            android:theme="@style/RedBar" />
+        <activity
+            android:name=".Activities.DeliveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Dac.OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Dac.ProductDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DashboardActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/Theme.MyMall.NoActionBar" />
+        <activity
+            android:name=".Activities.RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+                      android:name=".Activities.MainActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
