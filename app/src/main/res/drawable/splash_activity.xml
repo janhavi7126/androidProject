@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#9AF8F5F5"></solid>
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:src="@mipmap/basket"
+            android:gravity="center"
+
+            />
+    </item>
+
+</layer-list>
