@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <ImageView
+        android:id="@+id/basket"
+        android:layout_width="115dp"
+        android:layout_height="124dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/shop" />
+
+    <TextView
+        android:id="@+id/store"
+        android:layout_width="238dp"
+        android:layout_height="99dp"
+        android:layout_below="@+id/basket"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/aclonica"
+        android:text="My Mall"
+        android:textAlignment="center"
+        android:textColor="#0E25B3"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="195dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/store"
+        android:layout_centerHorizontal="true"
+        android:text="      " />
+
+
+</RelativeLayout>
