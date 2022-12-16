@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.ResetPassFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/forgotImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/forgot" />
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgotImage"
+            android:text="Forgot Password?"
+            android:fontFamily="@font/aclonica"
+            android:textAlignment="center"
+            android:textColor="#FB8C00"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dontworry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgotPassword"
+            android:layout_marginHorizontal="7dp"
+            android:fontFamily="@font/aclonica"
+            android:text="Don't worry, just enter your registered email!"
+            android:textAlignment="center"
+            android:textColor="#FB8C00"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/forgotEmail"
+            android:layout_width="405dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dontworry"
+            android:layout_marginHorizontal="7dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/aclonica"
+            android:backgroundTint="@color/purple_500"
+            android:hint="Provide your registered email id"
+            android:paddingHorizontal="7dp"
+            android:textSize="20sp" />
+
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:progressBackgroundTint="#E80404"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/resetPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgotEmail"
+            android:layout_marginHorizontal="7dp"
+            android:layout_marginTop="70dp"
+            android:text="Reset Password"
+            android:textAllCaps="false"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:id="@+id/goBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="&lt; &lt; Go Back "
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgotEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/emailRecovery"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@android:drawable/sym_action_email"
+                app:tint="@color/purple_500" />
+
+            <ImageView
+                android:id="@+id/Recovery"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@android:drawable/sym_action_email"
+                app:tint="#43A047" />
+
+            <TextView
+                android:id="@+id/RecoveryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#43A047"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="6dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/emailRecoveryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#43A047"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="6dp"
+                android:visibility="gone" />
+
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
